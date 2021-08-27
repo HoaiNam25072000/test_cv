@@ -1,0 +1,137 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+body{
+    background-image: url(/image/dark-wallpapers.jpg);
+    margin: 0px;
+}
+.block{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* position: relative; */
+    /* position: fixed; */
+    background-size: 100%;
+    background-repeat: repeat;
+    display: flex;
+    
+}
+.block__left{
+    width: 8vw;
+    height: 100vh;
+    background-color:#000 ;
+    display: flex;
+    flex-direction: column;
+    /* animation: navbar__growth ease 1s; */
+    margin-top: 0px;
+}
+.navbar{
+    /* margin-top: -10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 5px 0px 5px 0px;
+    /* position: fixed; */
+}
+.fas__navbar{
+    font-size: 200%;
+}
+.fas__navbar::before{
+    display: flex;
+    justify-content: center;
+}
+.navbar__p{
+    font-size: 15px;
+    /* font-family: revert;
+    display: flex;
+    justify-content: center; */
+    margin-top: 10px;
+}
+a{
+    color:#fff;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none
+}
+a:hover{
+    color: #95A5A6;
+    transition: 0.5s ease;
+}
+
+.navbar__a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block__right{
+    display: flex;
+    width: 100vw;
+}
+.block__right--content{
+    flex: 9;
+}
+.block__right--slide-bar{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 50vh;
+    flex: 1;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    right: 0px;
+    top: 25%;
+}
+
+.slide-bar--i{
+    font-size: 200%;
+}
+/* @keyframes navbar__growth{
+    from{
+        opacity: 0;
+        width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100px;
+        
+    }
+} */
+@media only screen and (max-width: 984px) {
+    /* body {
+      font-size: 50%;
+    } */
+    /* .block__left{
+        font-size: 10%;
+    } */
+    .body{
+        font-size: 50%;
+        /* margin-top: 40px; */
+    }
+    .navbar__p{
+        font-size: 50%;
+        /* margin-top: 40px; */
+    }
+    .navbar{
+        font-size: xx-small;
+    }
+    .block__right--slide-bar{
+        font-size: x-small;
+    }
+    .block__right--content{
+        font-size: x-small;
+    }
+}
+
+@keyframes growth_content{
+    from{
+        opacity: 0;
+        transform: scale(0.0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
